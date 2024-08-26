@@ -13,6 +13,10 @@ namespace FinancialDocumentApi.Services
                 .Where(x => x.TenantId == tenantId && x.DocumentId == documentId)
                 .FirstOrDefault() ?? new FinancialDocument();
 
+            if (document == null)
+            {
+                return new FinancialDocument();
+            }
             return document;
         }
 
