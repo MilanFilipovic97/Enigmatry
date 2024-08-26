@@ -1,6 +1,5 @@
 ﻿using FinancialDocumentApi.Data;
 using FinancialDocumentApi.Interfaces;
-using FinancialDocumentApi.Models;
 
 namespace FinancialDocumentApi.Services
 {
@@ -8,9 +7,7 @@ namespace FinancialDocumentApi.Services
     {
         public bool IsProductSupported(string productCode)
         {
-            var productList = DataStore.Products.ToList();
-
-            return productList
+            return DataStore.Products
                 .Where(x => x.ProductCode == productCode)
                 .Select(x => x.IsSupported)
                 .FirstOrDefault();
