@@ -106,7 +106,6 @@ namespace FinancialDocumentApi.Data
             }
         };
 
-
         public static List<Client> Clients = new List<Client>
         {
             new Client
@@ -165,7 +164,6 @@ namespace FinancialDocumentApi.Data
                 Client = Clients[2]
             },
         };
-
 
         public static List<WhitelistClientTenant> WhitelistClientsTenants = new List<WhitelistClientTenant>
         {

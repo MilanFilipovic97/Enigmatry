@@ -33,7 +33,7 @@ namespace FinancialDocumentApi.Controllers
         {
             if (!_productService.IsProductSupported(request.ProductCode))
             {
-                return StatusCode(403, "This product doesn't exist.");
+                return StatusCode(403, "This product is not supported.");
             }
 
             if (!_tenantService.IsWhiteListed(request.TenantId))
