@@ -192,7 +192,7 @@ namespace FinancialDocumentApi.Data
                 ClientId = Clients[2].Id,
                 Tenant= Tenants[2],
                 TenantId= Tenants[2].Id,
-                IsWhiteListed= true,
+                IsWhiteListed= false,
             },
         };
 
