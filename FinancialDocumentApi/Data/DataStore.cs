@@ -96,13 +96,13 @@ namespace FinancialDocumentApi.Data
             {
                 Id = new Guid("55bc1fdc-0bdd-4f34-97d9-7169a8e3370c"),
                 Name = "Test Tenant 2",
-                IsWhiteListed = false
+                IsWhiteListed = true
             },
             new Tenant
             {
                 Id = new Guid("37fffe24-735d-486f-bca9-cf6eec187aee"),
                 Name = "Test Tenant 3",
-                IsWhiteListed = true
+                IsWhiteListed = false
             }
         };
 
@@ -121,7 +121,7 @@ namespace FinancialDocumentApi.Data
                 Id= new Guid("e5e54132-2c05-463c-afe2-5834cb437e06"),
                 ClientVat = "12211",
                 RegistrationNumber = "registration 2",
-                CompanyType = CompanyTypeEnum.Medium,
+                CompanyType = CompanyTypeEnum.Small,
                 IsWhitelisted = true
             },
             new Client
